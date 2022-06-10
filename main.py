@@ -39,6 +39,8 @@ def main_menu():
             # GAME QUIT_____________________________________________:
             if event.type == pg.QUIT:
                 pg.quit()
+                pg.display.quit()
+                sys.exit()
                 break
 
             # MOUSE CLICK___________________________________________:
@@ -62,7 +64,9 @@ def main_menu():
 
         elif exit_game.update():
             menu_run = False
-            pg.quit()
+            pg.display.quit()
+            sys.exit()
+            break 
 
         # RENDER / ATT DOS BOTOES___________________________________:
         all_buttons.draw(screen)
@@ -106,6 +110,8 @@ def pick():
             # GAME QUIT_____________________________________________:
             if event.type == pg.QUIT:
                 pg.quit()
+                pg.display.quit()
+                sys.exit()
                 break
 
             # MOUSE CLICK___________________________________________:
@@ -191,6 +197,8 @@ def game_loop(animal_tipo):
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 pg.quit()
+                pg.display.quit()
+                sys.exit()
                 break
 
             # MOUSE CLICK GET____________________________________:
@@ -287,3 +295,5 @@ if __name__ == '__main__':
     main_menu()
 
 pg.quit()
+pg.display.quit()
+sys.exit()
