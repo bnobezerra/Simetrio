@@ -1,2 +1,2 @@
 # Simetrio
-Educational game about simetries in metazoans.
+Educational game about bilaterial simetry evolution in Metazoa.
