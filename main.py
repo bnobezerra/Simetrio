@@ -4,7 +4,7 @@ import classes
 # INICIADORES PADRÕES..............................................:
 pg.init()
 pg.font.init()
-font_30 = pg.font.Font('pixelart.ttf', 100)
+font_30 = pg.font.Font('ARCADECLASSIC.TTF', 100)
 
 # TELA_____________________________________________________________:
 larg = 1280
